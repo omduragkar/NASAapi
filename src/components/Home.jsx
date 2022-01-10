@@ -21,7 +21,7 @@ const Home = () => {
                     setData(mdata);
                     mdata = JSON.stringify(mdata);
                     localStorage.setItem('data', mdata);
-                    console.log(mdata);
+                    // console.log(mdata);
                 }
                 catch(err){
                     console.log(err);
@@ -61,7 +61,6 @@ const Home = () => {
     
     return (
         <div className='my-3'>
-            {console.log(data)}
             {loading?
             <div style={{"height":"100rem", "width":"100%", "textAlign":"center", "margin":"35% auto"}}>
                 <div class="spinner-border text-primary " role="status">
