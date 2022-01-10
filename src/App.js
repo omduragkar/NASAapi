@@ -1,5 +1,5 @@
-import Home from "./Home";
-import Nav from "./Nav";
+import Home from "./components/Home";
+import Nav from "./components/Nav";
 
 function App() {
   return (

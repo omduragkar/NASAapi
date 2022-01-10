@@ -62,7 +62,13 @@ const Home = () => {
     return (
         <div className='my-3'>
             {console.log(data)}
-            {loading?<h1>Loading</h1>:
+            {loading?
+            <div style={{"height":"100rem", "width":"100%", "textAlign":"center", "margin":"35% auto"}}>
+                <div class="spinner-border text-primary " role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+            :
                 <>
                     
                     {data && data.length>1 && data.map((cdata, i)=>(
