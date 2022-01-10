@@ -24,6 +24,7 @@ const Home = () => {
                     // console.log(mdata);
                 }
                 catch(err){
+                    // Detailed error in console
                     console.log(err);
                 }   
             }else{
